@@ -4,20 +4,30 @@
 }
 
 body {
-	background-color: rgb(15,15,15);
-	margin: 50px 125px;
+	background-color: rgb(20,20,20);
+	margin: 30px 125px;
 }
 
 p {
-	text-align: Center;
-	
+	padding-left: 30px;
+	font-size: 20px;
+	line-height: 20px;
+	padding-right: 30px;
+}
+
+li {
+    line-height: 25px;
+}
+
+ul {
+    padding-left: 8%;
 }
 
 h1 {
     color: DodgerBlue;
 	font-family: Orbitron;
 	letter-spacing: 2px;
-	font-size: 40px;
+	font-size: 35px;
 }
 
 h2 {
@@ -25,10 +35,29 @@ h2 {
 	font-size: 20px;
 }
 
+h3 {
+	font-size: 25px;
+	padding-left: 30px;
+	padding-top: 10px;
+	line-height: 20px;
+	
+}
+
+h4 {
+	font-size: 25px;
+	text-align: center;
+	border: 0px;
+	border-bottom: 2px;
+	border-style: dashed;
+	border-color: white;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding-top: 25px;
+}
+
 .Gray
 {
 	background-color: rgb(25,25,30);
-	padding-left: 30px;
 	padding-top: 0.1px;
 }
 
@@ -36,9 +65,12 @@ h2 {
 {
 	padding-left: 3%;
     padding-top: 10px;
-	background-image: linear-gradient(90deg, rgb(25,25,30) 40%, rgb(15,15,15) 30%); 
+	background-image: linear-gradient(90deg, rgb(25,25,30) 40%, rgb(20,20,20) 30%); 
 	line-height: 10px;
 	padding-bottom: 15px;
+	border-left: 2px;
+	border-left-color: DarkGoldenRod;
+	border-left-style: solid;
 }
 
 .NavBar
@@ -54,7 +86,7 @@ h2 {
 
 .NavBarText {
 	font-size: 25px;
-	padding-left: 15%;
+	padding-left: 16%;
 	padding-right: 10%;
 	text-align: center;
 }
@@ -65,7 +97,7 @@ h2 {
 
 .Active {
     font-size: 25px;
-	padding-left: 15%;
+	padding-left: 16%;
 	padding-right: 10%;
 	text-align: center;
 	color: DarkOrange;
