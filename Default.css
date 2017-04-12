@@ -5,11 +5,11 @@
 
 body {
 	background-color: rgb(20,20,20);
-	margin: 30px 125px;
+	margin: 30px 200px;
 }
 
 p {
-	padding-left: 30px;
+	padding-left: 90px;
 	font-size: 20px;
 	line-height: 20px;
 	padding-right: 30px;
@@ -37,7 +37,7 @@ h2 {
 
 h3 {
 	font-size: 25px;
-	padding-left: 30px;
+	padding-left: 90px;
 	padding-top: 10px;
 	line-height: 20px;
 	
@@ -55,18 +55,25 @@ h4 {
 	padding-top: 25px;
 }
 
+ul
+{
+	padding-left: 185px;
+}
 
 .Gray
 {
-	background-color: rgb(25,25,30);
+	background-color: rgb(30,35,40);
 	padding-top: 0.1px;
+	/* border:5px; */
+	/* border-color:orange; */
+	/* border-style:solid; */
 }
 
 .Tab
 {
 	padding-left: 3%;
     padding-top: 10px;
-	background-image: linear-gradient(90deg, rgb(25,25,30) 40%, rgb(20,20,20) 30%); 
+	background-image: linear-gradient(90deg, rgb(30,35,40) 40%, rgb(20,20,20) 30%); 
 	line-height: 10px;
 	padding-bottom: 15px;
 	border-left: 2px;
@@ -88,7 +95,7 @@ h4 {
 .NavBarText {
 	font-size: 25px;
 	padding-left: 17%;
-	padding-right: 10%;
+	padding-right: 9%;
 	text-align: center;
 }
 
@@ -102,4 +109,9 @@ h4 {
 	padding-right: 10%;
 	text-align: center;
 	color: DarkOrange;
+}
+
+.bottomBar
+{
+    background-color: black;
 }
