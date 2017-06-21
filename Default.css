@@ -5,7 +5,7 @@
 
 body {
 	background-color: rgb(20,20,20);
-	margin: 30px 200px;
+	margin: 30px 250px;
 }
 
 p {
@@ -16,15 +16,15 @@ p {
 }
 
 li {
-    line-height: 25px;
+	line-height: 25px;
 }
 
 ul {
-    padding-left: 8%;
+	padding-left: 8%;
 }
 
 h1 {
-    color: DodgerBlue;
+	color: DodgerBlue;
 	font-family: Orbitron;
 	letter-spacing: 2px;
 	font-size: 35px;
@@ -33,6 +33,7 @@ h1 {
 h2 {
 	font-style: Italic;
 	font-size: 20px;
+	color: DarkOrange;
 }
 
 h3 {
@@ -54,6 +55,13 @@ h4 {
 	margin-right: 20%;
 	padding-top: 25px;
 }
+h5 {
+	font-size: 25px;
+	text-align: center;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding-top: 25px;
+}
 
 ul
 {
@@ -67,25 +75,27 @@ ul
 	/* border:5px; */
 	/* border-color:orange; */
 	/* border-style:solid; */
+
 }
 
 .Tab
 {
 	padding-left: 3%;
-    padding-top: 10px;
+	padding-top: 10px;
 	background-image: linear-gradient(90deg, rgb(30,35,40) 40%, rgb(20,20,20) 30%); 
 	line-height: 10px;
 	padding-bottom: 15px;
 	border-left: 2px;
 	border-left-color: DarkGoldenRod;
 	border-left-style: solid;
+	margin-top: -5px;
 }
 
 .NavBar
 {
-    border: 0px;
-	border-top: 2px;
-	border-bottom: 2px;
+	border: 0px;
+	border-top: 1px;
+	border-bottom: 1px;
 	border-style: solid;
 	border-color: white;
 	background-color: rgb(35,35,35);
@@ -103,15 +113,59 @@ ul
 	color: DarkOrange;
 }
 
+.Resume {
+	font-size: 25px;
+	text-align: center;
+
+}
+
+.Resume:hover {
+	color: DarkOrange;
+}
+
 .Active {
-    font-size: 25px;
+	font-size: 25px;
 	padding-left: 16%;
 	padding-right: 10%;
 	text-align: center;
 	color: DarkOrange;
+
 }
 
 .bottomBar
 {
-    background-color: black;
+	background-color: black;
+    margin-bottom: -45px;
+    margin-left: -5px;
+    margin-right:  -5px;
+}
+
+.right-to-left {
+	border-width: 7px 7px 7px 0px;
+	border-style: solid;
+	-webkit-border-image: 
+	-webkit-gradient(linear, 0 0, 100% 0, from(black), to(rgba(0, 0, 0, 0))) 1 100%;
+	-webkit-border-image: 
+	-webkit-linear-gradient(right, black, rgba(0, 0, 0, 0)) 1 100%;
+	-moz-border-image:
+	-moz-linear-gradient(right, black, rgba(0, 0, 0, 0)) 1 100%; 
+	-o-border-image:
+	-o-linear-gradient(right, black, rgba(0, 0, 0, 0)) 1 100%;
+	border-image:
+	linear-gradient(to right, black, rgba(0, 0, 0, 0)) 1 100%;
+
+}
+.left-to-right {
+	border-width:  7px 0px 7px 7px;
+	border-style: solid;
+	-webkit-border-image: 
+	-webkit-gradient(linear, 0, 0, 100%, 0, from(black), to(rgba(0, 0, 0, 0))) 1 100%;
+	-webkit-border-image: 
+	-webkit-linear-gradient(left, black, rgba(0, 0, 0, 0)) 1 100%;
+	-moz-border-image:
+	-moz-linear-gradient(left, black, rgba(0, 0, 0, 0)) 1 100%;  
+	-o-border-image:
+	-o-linear-gradient(left, black, rgba(0, 0, 0, 0)) 1 100%;
+	border-image:
+	linear-gradient(to left, black, rgba(0, 0, 0, 0)) 1 100%; 
 }
