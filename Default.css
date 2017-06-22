@@ -10,9 +10,16 @@ body {
 
 p {
 	padding-left: 90px;
-	font-size: 20px;
-	line-height: 20px;
+	font-size: 25px;
+	letter-spacing: 2px;
+	line-height: 30px;
 	padding-right: 30px;
+	font-family:Titillium Web;
+}
+
+.cyberpunk{
+	font-family:Titillium Web;
+	color: #DD0048;
 }
 
 li {
@@ -61,6 +68,10 @@ h5 {
 	margin-left: 20%;
 	margin-right: 20%;
 	padding-top: 25px;
+}
+
+.h6 {
+	font-size: 25px;
 }
 
 ul
@@ -168,4 +179,33 @@ ul
 	-o-linear-gradient(left, black, rgba(0, 0, 0, 0)) 1 100%;
 	border-image:
 	linear-gradient(to left, black, rgba(0, 0, 0, 0)) 1 100%; 
+}
+.image {
+	opacity: 0.75;
+	margin-bottom: -5px;
+}
+
+.image:hover {
+	filter: hue-rotate(90deg);
+	cursor: pointer;
+}
+
+.image2 {
+	opacity: 0.75;
+	margin-bottom: -5px;
+}
+
+.image2:hover {
+	filter: invert(100);
+	cursor: pointer;
+}
+
+th{
+	 vertical-align: top;
+	 text-align: left;
+}
+
+table {
+	padding-bottom: 100px;
+	padding-top: 100px;
 }

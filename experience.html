@@ -5,6 +5,16 @@
   <link  rel="stylesheet" type="text/css" href="ddemaegd.github.io/Default.css">
   <!--<link  rel="stylesheet" type="text/css" href="Default.css">-->
   <link href="https://fonts.googleapis.com/css?family=Orbitron" type="text/css" rel="stylesheet" >
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:600i" rel="stylesheet">
+  <script type="text/javascript">
+    function handleClick(ID) {  
+      var elem = document.getElementById(ID);
+      if (elem.hidden === true)
+        elem.hidden = false;
+      else 
+        elem.hidden = true;
+    }
+  </script>
 </head>
 <body>
   <div class = "right-to-left">
@@ -23,28 +33,41 @@
 	<!--
 	<a href = "index.html" class = "NavBarText" style="text-decoration:none">Home<a>
 	<a href = "experience.html" class = "Active" style="text-decoration:none">Projects<a>
-   <a href = "resume.html" class = "NavBarText" style="text-decoration:none">Résumé<a> 	-->
+   <a href = "resume.html" class = "NavBarText" style="text-decoration:none">RÃ©sumÃ©<a> 	-->
    </div>
    <div class = "Gray">
     <p></p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/I34zW4qHBqw" frameborder="0" allowfullscreen></iframe>
-    <div>
-      <img src="CyberPistol Title Image.png" alt="Ok, I'll admit, I'm still new at HTML" style="width:100%; ;height:100%;">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/iYHGh7PXHO0" frameborder="0" allowfullscreen></iframe>
+    <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/I34zW4qHBqw" frameborder="0" allowfullscreen></iframe>-->
+    <img src="CyberPistol Title Image.png" class = "image" alt="Ok, I'll admit, I'm still new at HTML" style="width:100%; ;height:100%;" onclick="handleClick('Cyber')">
+    <table hidden id="Cyber" style="width:100%; background-color: #101012;">
+      <tr>
+        <th>
+          <div id="image">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/iYHGh7PXHO0" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </th>
+        <th><p class="cyberpunk">&emsp; A 2D cyberpunk side-scroller shooter. Since October 2014, I have been developing this game on my own in my spare time. This would include all of the graphics, programming, and sound effects. I wanted to make this game simple but unique. A cyberpunk genre set in the Middle Ages. Technology has improved immensely but the world politics have never changed. The game features multiple weapons to suit anyones style of gameplay. The game is currently being developed in C# using the Monogame Framework. <p></th>
+      </tr>
+    </table>
+
+    <img src="CGT445Title.PNG" class = "image2" alt="Ok, I'll admit, I'm still new at HTML" style="width:100%; ;height:100%;" onclick="handleClick('Race')">
+    <table hidden id="Race" style="width:auto;" background="Stripes.png">
+      <tr>
+        <th><p style="margin-right: 15px">&emsp; Drive for Greatness! <br> <br> &emsp; &emsp; &emsp; A thrilling racing game that perfectly balances the fun of arcade racing and the serious atmosphere of competition. Currently, the game features 2 tracks and VR support. As the lead programmer, I have been responsible for the game mechanics, car handling, VR support, and AI mechanics. The game is currently being developed in Unreal Engine 4.<br> <br> Credit also given to: Eric Lipps, Zack Braasch, and Anshul Bhonsle<p></th>
+        <th>
+          <div id="image">
+            <iframe width="560" height="315" align="right" src="https://www.youtube.com/embed/h5H4zJiyB_s" frameborder="0" allowfullscreen> </iframe>
+          </div>
+        </th>
+      </tr>
+    </table>
+    <img src="Identity Title.png" class = "image2" alt="Ok, I'll admit, I'm still new at HTML" style="width:100%; ;height:100%;">
+    <div id="container" style="white-space:nowrap">
+      <div id="image" style="display:inline;">
+      </div>
     </div>
-    <div>
-      <img src="CGT445Title.PNG" alt="Ok, I'll admit, I'm still new at HTML" style="width:100%; ;height:100%;">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/h5H4zJiyB_s" frameborder="0" allowfullscreen>
-      </iframe>
+    <div class = "bottomBar">
+      <p>Copyright Â© 2017 <a href="http://ddemaegd.github.io." style="color: DarkOrange; text-decoration:none" >Dakota DeMaegd</a>. All Rights Reserved.</p>
     </div>
-    <div>
-      <img src="Identity Title.png" alt="Ok, I'll admit, I'm still new at HTML" style="width:100%; ;height:100%;">
-    </div>
-  </div>
-  <div class = "bottomBar">
-    <p>Copyright © 2017 <a href="http://ddemaegd.github.io." style="color: DarkOrange; text-decoration:none" >Dakota DeMaegd</a>. All Rights Reserved.</p>
-  </div>
-</div>
-</div>
-</body>
-</html>
+  </body>
+  </html>
