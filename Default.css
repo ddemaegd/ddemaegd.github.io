@@ -8,8 +8,20 @@ body {
 	margin: 30px 250px;
 }
 
+b {
+	padding-left: 90px;
+	font-size: 20px;
+	padding-top: -20px;
+	vertical-align: middle;
+}
 p {
 	padding-left: 90px;
+	font-size: 25px;
+	line-height: 25px;
+	padding-right: 30px;
+}
+
+.pRace {
 	font-size: 25px;
 	letter-spacing: 2px;
 	line-height: 30px;
@@ -17,8 +29,15 @@ p {
 	font-family:Titillium Web;
 }
 
-.cyberpunk{
+.pHome {
+    font-size: 20px;
+	font-family: 'Lato';
+}
+
+
+.cyberpunk {
 	font-family:Titillium Web;
+	letter-spacing: 1px;
 	color: #DD0048;
 }
 
@@ -146,9 +165,10 @@ ul
 .bottomBar
 {
 	background-color: black;
-    margin-bottom: -45px;
-    margin-left: -5px;
-    margin-right:  -5px;
+	margin-bottom: -45px;
+	margin-left: -5px;
+	margin-right:  -5px;
+	font-size: 35px;
 }
 
 .right-to-left {
@@ -201,11 +221,12 @@ ul
 }
 
 th{
-	 vertical-align: top;
-	 text-align: left;
+	vertical-align: top;
+	text-align: left;
 }
 
 table {
 	padding-bottom: 100px;
 	padding-top: 100px;
+	height: 0%;
 }
