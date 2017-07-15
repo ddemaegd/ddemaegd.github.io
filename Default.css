@@ -5,7 +5,12 @@
 
 body {
 	background-color: rgb(20,20,20);
-	margin: 30px 250px;
+	/* margin: 50px 300px; */
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 16%;
+	margin-right: 16%
+    
 }
 
 b {
@@ -16,7 +21,7 @@ b {
 }
 p {
 	padding-left: 90px;
-	font-size: 25px;
+	font-size: 20px;
 	line-height: 25px;
 	padding-right: 30px;
 }
@@ -63,11 +68,10 @@ h2 {
 }
 
 h3 {
-	font-size: 25px;
+	font-size: 23px;
 	padding-left: 90px;
 	padding-top: 10px;
 	line-height: 20px;
-	
 }
 
 h4 {
@@ -76,17 +80,19 @@ h4 {
 	border: 0px;
 	border-bottom: 2px;
 	border-style: dashed;
-	border-color: white;
-	margin-left: 20%;
-	margin-right: 20%;
-	padding-top: 25px;
+	border-color: darkorange;
+	margin-left: 15%;
+	margin-right: 15%;
+	padding-top: 50px;
+	margin-bottom: 50px;	
+	color: white;
 }
 h5 {
-	font-size: 25px;
+	font-size: 1px;
 	text-align: center;
 	margin-left: 20%;
 	margin-right: 20%;
-	padding-top: 25px;
+	padding-top: 5px;
 }
 
 .h6 {
@@ -111,14 +117,17 @@ ul
 .Tab
 {
 	padding-left: 3%;
-	padding-top: 10px;
-	background-image: linear-gradient(90deg, rgb(30,35,40) 40%, rgb(20,20,20) 30%); 
+	padding-top: 15px;
+	background-image: linear-gradient(45deg, rgb(25,35,45) 40%, rgb(25,25,25) 60%); 
 	line-height: 10px;
 	padding-bottom: 15px;
 	border-left: 2px;
 	border-left-color: DarkGoldenRod;
 	border-left-style: solid;
-	margin-top: -5px;
+	border-top: 1px;
+	border-top-color: black;
+	border-top-style: solid;
+	margin-top: -7px;
 }
 
 .NavBar
@@ -159,7 +168,6 @@ ul
 	padding-right: 10%;
 	text-align: center;
 	color: DarkOrange;
-
 }
 
 .bottomBar
@@ -167,12 +175,12 @@ ul
 	background-color: black;
 	margin-bottom: -45px;
 	margin-left: -5px;
-	margin-right:  -5px;
+	margin-right: -5px;
 	font-size: 35px;
 }
 
 .right-to-left {
-	border-width: 7px 7px 7px 0px;
+	border-width: 0px 7px 7px 0px;
 	border-style: solid;
 	-webkit-border-image: 
 	-webkit-gradient(linear, 0 0, 100% 0, from(black), to(rgba(0, 0, 0, 0))) 1 100%;
