@@ -177,9 +177,10 @@ ul
 .bottomBar
 {
 	background-color: black;
-	margin-bottom: -45px;
-	margin-left: -5px;
-	margin-right: -5px;
+	margin-top: 0px;
+	margin-bottom: -7px;
+	margin-left: -0px;
+	margin-right: -0px;
 	font-size: 35px;
 }
 
@@ -211,6 +212,7 @@ ul
 	-o-linear-gradient(left, black, rgba(0, 0, 0, 0)) 1 100%;
 	border-image:
 	linear-gradient(to left, black, rgba(0, 0, 0, 0)) 1 100%; 
+	margin-bottom: -7px;
 }
 .image {
 	opacity: 0.75;
@@ -246,4 +248,5 @@ td {
 	vertical-align: top;
 	text-align: center;
 	font-weight: bold;
+	width: 33%;
 }
