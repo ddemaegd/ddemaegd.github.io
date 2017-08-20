@@ -10,7 +10,7 @@ body {
 	margin-bottom: 50px;
 	margin-left: 16%;
 	margin-right: 16%
-    
+
 }
 
 b {
@@ -35,7 +35,7 @@ p {
 }
 
 .pHome {
-    font-size: 20px;
+	font-size: 20px;
 	font-family: 'Lato';
 }
 
@@ -139,12 +139,13 @@ ul
 	border-color: white;
 	background-color: rgb(35,35,35);
 	padding: 10px;
+
 }
 
 .NavBarText {
 	font-size: 25px;
-	padding-left: 17%;
-	padding-right: 9%;
+	margin-left: 17%;
+	margin-right: 9%;
 	text-align: center;
 }
 
@@ -228,7 +229,7 @@ ul
 	cursor: pointer;
 }
 
-th{
+th {
 	vertical-align: top;
 	text-align: left;
 }
@@ -237,4 +238,9 @@ table {
 	padding-bottom: 100px;
 	padding-top: 100px;
 	height: 0%;
+}
+td {
+	vertical-align: top;
+	text-align: center;
+	font-weight: bold;
 }
