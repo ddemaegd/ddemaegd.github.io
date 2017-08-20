@@ -10,7 +10,6 @@ body {
 	margin-bottom: 50px;
 	margin-left: 16%;
 	margin-right: 16%
-
 }
 
 b {
@@ -19,11 +18,13 @@ b {
 	padding-top: -20px;
 	vertical-align: middle;
 }
+
 p {
 	padding-left: 90px;
 	font-size: 20px;
 	line-height: 25px;
-	padding-right: 30px;
+	padding-right: 90px;
+	font-size-adjust: 0.28;
 }
 
 .pRace {
@@ -48,6 +49,8 @@ p {
 
 li {
 	line-height: 25px;
+	padding-right: 90px;
+
 }
 
 ul {
@@ -72,6 +75,7 @@ h3 {
 	padding-left: 90px;
 	padding-top: 10px;
 	line-height: 20px;
+	padding-right: 90px;
 }
 
 h4 {
@@ -111,7 +115,6 @@ ul
 	/* border:5px; */
 	/* border-color:orange; */
 	/* border-style:solid; */
-
 }
 
 .Tab
