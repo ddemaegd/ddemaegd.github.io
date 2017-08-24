@@ -234,6 +234,16 @@ ul
 	cursor: pointer;
 }
 
+.Enviroimage
+{
+	margin-bottom: 	40px;
+}
+
+.Enviroimage:hover
+{
+	cursor: pointer;
+}
+
 th {
 	vertical-align: top;
 	text-align: left;
@@ -346,3 +356,4 @@ td {
   from {opacity: .4} 
   to {opacity: 1}
 }
+
