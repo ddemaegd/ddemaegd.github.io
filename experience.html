@@ -6,7 +6,8 @@
   <link  rel="stylesheet" type="text/css" href="Default.css">
   <link href="https://fonts.googleapis.com/css?family=Orbitron" type="text/css" rel="stylesheet" >
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web:600i" rel="stylesheet">
-  <script>document.write('<script src="http://' + (location.host || '${1:localhost}').split(':')[0] + ':${2:35729}/livereload.js?snipver=1"></' + 'script>')</script>
+  <link href="https://fonts.googleapis.com/css?family=Dosis|Lato:300i, 400" rel="stylesheet">
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>
     $( window ).load(function() {
@@ -14,6 +15,8 @@
      $('#CTable').removeAttr('hidden');
      $('#RaceTable').slideUp('slow');
      $('#RTable').removeAttr('hidden');
+     $('#RacingTable').slideUp('slow');
+     $('#ETable').removeAttr('hidden');
    });
     $(document).ready(function () {
       var timer;
@@ -57,6 +60,27 @@
       });
     });
 
+    $(document).ready(function () {
+      var timer;
+      $('#RacingTable').slideDown('slow', function () {
+        timer = setTimeout(function () {
+          $('#RacingTable').slideUp("slow");
+        }, 5000000);
+      });
+      $('#Racing').click(function () {
+        if ($('#RacingTable').is(":hidden")) {
+          $('#RacingTable').slideDown('slow', function () {
+            timer = setTimeout(function () {
+              $('#RacingTable').slideUp("slow");
+            }, 5000000);
+          });
+        } else {
+          $('#RacingTable').slideUp('slow');
+          clearTimeout(timer);
+        }
+      });
+    });
+
 /*    $(document).ready(function () {
       var timer;
       $('#CyberTable').slideDown('slow', function () {
@@ -90,6 +114,8 @@
 
   </script>
 
+  
+
 </head>
 <body>
   <div class = "right-to-left">
@@ -107,12 +133,30 @@
           <td><a href = "http://ddemaegd.github.io/resume.html" class = "NavBarText" style="text-decoration:none">Resume</a></td>
         </tr>
       </table>  
-      <div class = "Gray">
-        <p></p>
-        <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/I34zW4qHBqw" frameborder="0" allowfullscreen></iframe>-->
-        <img id='Cyber' src="CyberPistol Title Image.png" class = "image" alt="Ok, I'll admit, I'm still new at HTML" style="width:100%; ;height:100%;">
+      <div class = NavBar>
+        <div  align="center">
+        <img id='Race'src="CGT445Title.PNG" class = "image2" alt="Ok, I'll admit, I'm still new at HTML">
+        <div  id='RaceTable'>
+          <table class="pRace" id='RTable'  hidden  style="width:auto;" background="Stripes.png">
+            <tr>
+              <th><p>Active Development: (Jan. 2017 - May 2017)</p></th>
+            </tr>
+            <tr>
+              <th><p style="margin-right: 25px; margin-left: 0px">&emsp; Drive for Greatness! <br> <br> &emsp; &emsp; &emsp; A thrilling racing game that perfectly balances the fun of arcade racing and the serious atmosphere of competition. Currently, the game features 2 tracks and VR support. As the lead programmer, I have been responsible for the game mechanics, car handling, VR support, and AI mechanics. The game is currently being developed in Unreal Engine 4.<br> <br> Credit also given to: Eric Lipps, Zack Braasch, and Anshul Bhonsle</p></th>
+              <th width="50%">
+                <div id="image">
+                  <iframe width="100%" height="315" align="right" src="https://www.youtube.com/embed/h5H4zJiyB_s" frameborder="0" allowfullscreen> </iframe>
+                </div>
+              </th>
+            </tr>
+          </table>
+        </div>
+        <img id='Cyber' src="CyberPistol Title Image.png" class = "image" alt="Ok, I'll admit, I'm still new at HTML">
         <div  id='CyberTable'>
           <table class="pProj" id='CTable' hidden style="width:100%; background-color: #101012">
+                      <tr>
+              <th><p class="cyberpunk">Active Development: (Oct. 2014 - Present)</p></th>
+            </tr>
             <tr>
               <th width="50%">
                 <div id="image">
@@ -123,23 +167,55 @@
             </tr>
           </table>
         </div>
-        <img id='Race'src="CGT445Title.PNG" class = "image2" alt="Ok, I'll admit, I'm still new at HTML" style="width:100%; ;height:100%;">
-        <div  id='RaceTable'>
-          <table class="pRace" id='RTable'  hidden  style="width:auto;" background="Stripes.png">
-            <th >
-              <th><p style="margin-right: 25px; margin-left: 0px">&emsp; Drive for Greatness! <br> <br> &emsp; &emsp; &emsp; A thrilling racing game that perfectly balances the fun of arcade racing and the serious atmosphere of competition. Currently, the game features 2 tracks and VR support. As the lead programmer, I have been responsible for the game mechanics, car handling, VR support, and AI mechanics. The game is currently being developed in Unreal Engine 4.<br> <br> Credit also given to: Eric Lipps, Zack Braasch, and Anshul Bhonsle</p></th>
-              <th width="50%">
-                <div id="image">
-                  <iframe width="100%" height="315" align="right" src="https://www.youtube.com/embed/h5H4zJiyB_s" frameborder="0" allowfullscreen> </iframe>
-                </div>
+        <img src="Identity Title.png" class = "image2" alt="Ok, I'll admit, I'm still new at HTML" >
+        <div id="container" style="white-space:nowrap">
+          <div id="image" style="display:inline;">
+          </div>
+        </div>
+        <img id='Racing' src="IEEERacingBanner.png" class = "ieeeimage" alt="Ok, I'll admit, I'm still new at HTML">
+        <div  id='RacingTable'>
+          <table class="pProj" id='ETable' hidden style="width:100%; background-color: #101012">
+            <tr>
+              <th><p class="pHome" style="font-weight: normal" >&emsp; IEEE Racing builds advanced electric go-karts to compete in the evGrandPrix at Purdue and at the Indianapolis Motor Speedway. We design complex battery systems, obtain sponsors, improve physical and electrical safety features, and test motor efficiency. Current projects include an advanced lightweight-chassis designed kart and a dual-motor, split-axle kart with torque vectoring and steering angle sensing capabilities. <br> &emsp; At my time in this organization, our team finished 6th in the evGrandPrix in 2016. In 2017, I drove in the evGrandPrix event and finished 2nd. My responsibilities were to implement a torque vectoring system, fix engine damage that had occured during practice, adjust the kart to comfort my driving style, and compete as a driver in the competition.</p></th>
+            </tr>
+            <tr>
+              <th>
+              <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="KartImages/Kartimage1.jpg" style="width:100%">
+          <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="KartImages/Kartimage2.jpg" style="width:100%">
+          <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="KartImages/Kartimage3.jpg" style="width:100%">
+          <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="KartImages/KartEnvironment.jpg" style="width:100%">
+          <div class="text"></div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>  
+      </div>
               </th>
             </tr>
           </table>
         </div>
-        <img src="Identity Title.png" class = "image2" alt="Ok, I'll admit, I'm still new at HTML" style="width:100%; ;height:100%;">
-        <div id="container" style="white-space:nowrap">
-          <div id="image" style="display:inline;">
-          </div>
         </div>
         <div class = "bottomBar">
           <b>Copyright © 2017 <a href="http://ddemaegd.github.io." style="color: DarkOrange; text-decoration:none; " >Dakota DeMaegd</a>. All Rights Reserved.</b>
@@ -149,4 +225,37 @@
   </div>
 
 </body>
+
+<script type="text/javascript">
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    { 
+      if (n < 1) {slideIndex = slides.length}
+      {
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none"; 
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block"; 
+        dots[slideIndex-1].className += " active";
+      }
+    }
+  }
+</script>
 </html>

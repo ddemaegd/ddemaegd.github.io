@@ -39,15 +39,90 @@
       <h3>Welcome!</h3>
       <p class="pHome">I'm an aspiring game programmer with experience in software development. I am current studying my bachelor's
         at Purdue University. I am expected to graduate in Dec. 2017 majoring in Computer Information Technology with minors
-        in Organizational Leadership Supervision and Communications. I have completed a few game projects on the side that were unrelated
-        to coursework. I specialize with programming in C# using the XNA/MonoGame Framework.</p>
-        <p>Feel free to take a look around. Contact me if you are interested in working together!</p>
-      </div>
+        in Organizational Leadership Supervision and Communications. I have completed a few game passion projects on the side that correlate to my coursework. I specialize with programming in C# using the XNA/MonoGame Framework as well as working in Unreal Engine 4.</p>
+        <p>Feel free to take a look around. Contact me if you are interested in working together! </p>
 
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="HomeImages/GenericFPSScreenShot.png" style="width:100%">
+          <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="HomeImages/SuperMegaScreenShot.png" style="width:100%">
+          <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="HomeImages/HouseEnvironment.png" style="width:100%">
+          <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="HomeImages/Kartimage3.jpg" style="width:100%">
+          <div class="text"></div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+          <div  class="NavBar" style="padding-top: -25px; margin-bottom: 16px">
+          <h5><a  href="mailto:ddemaegd82@gmail.com"class = "Resume" style="text-decoration:none;"
+            ">Email: ddemaegd82@gmail.com</a>
+          </h5>
+        </div>
+        <div  class="NavBar" style="padding-top: -25px;">
+          <h5><a href = "https://www.linkedin.com/in/dakota-demaegd-b60744105/" target="_blank" class = "Resume" style="text-decoration:none;"
+            ">LinkedIn: Dakota DeMaegd</a>
+          </h5>
+        </div>
+        </div>
       <div class = "bottomBar">
         <b>Copyright © 2017 <a href="http://ddemaegd.github.io." style="color: DarkOrange; text-decoration:none;" >Dakota DeMaegd</a>. All Rights Reserved.</b>
       </div>
     </div>
   </div>
 </body>
+
+<script type="text/javascript">
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    { 
+      if (n < 1) {slideIndex = slides.length}
+      {
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none"; 
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block"; 
+        dots[slideIndex-1].className += " active";
+      }
+    }
+  }
+</script>
+
 </html>

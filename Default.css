@@ -9,7 +9,8 @@ body {
 	margin-top: 50px;
 	margin-bottom: 50px;
 	margin-left: 16%;
-	margin-right: 16%
+	margin-right: 16%;
+	min-width: 400px;
 }
 
 b {
@@ -32,7 +33,7 @@ p {
 	letter-spacing: 2px;
 	line-height: 30px;
 	padding-right: 30px;
-	font-family:Titillium Web;
+	font-family: Titillium Web;
 }
 
 .pHome {
@@ -82,8 +83,8 @@ h4 {
 	font-size: 25px;
 	text-align: center;
 	border: 0px;
-	border-bottom: 2px;
-	border-style: dashed;
+	border-bottom: 1px;
+	border-style: solid;
 	border-color: darkorange;
 	margin-left: 15%;
 	margin-right: 15%;
@@ -153,7 +154,7 @@ ul
 }
 
 .NavBarText:hover {
-	color: DarkOrange;
+	color: DodgerBlue;
 }
 
 .Resume {
@@ -163,7 +164,7 @@ ul
 }
 
 .Resume:hover {
-	color: DarkOrange;
+	color: DodgerBlue;
 }
 
 .Active {
@@ -172,6 +173,10 @@ ul
 	padding-right: 10%;
 	text-align: center;
 	color: DarkOrange;
+}
+
+.Active:hover {
+	color: DodgerBlue;
 }
 
 .bottomBar
@@ -185,7 +190,7 @@ ul
 }
 
 .right-to-left {
-	border-width: 0px 7px 7px 0px;
+	border-width: 0px 14px 7px 0px;
 	border-style: solid;
 	-webkit-border-image: 
 	-webkit-gradient(linear, 0 0, 100% 0, from(black), to(rgba(0, 0, 0, 0))) 1 100%;
@@ -200,7 +205,7 @@ ul
 
 }
 .left-to-right {
-	border-width:  7px 0px 7px 7px;
+	border-width:  7px 0px 7px 14px;
 	border-style: solid;
 	-webkit-border-image: 
 	-webkit-gradient(linear, 0, 0, 100%, 0, from(black), to(rgba(0, 0, 0, 0))) 1 100%;
@@ -217,6 +222,8 @@ ul
 .image {
 	opacity: 0.75;
 	margin-bottom: -5px;
+	width: 100%;
+	height: 100%;
 }
 
 .image:hover {
@@ -227,10 +234,24 @@ ul
 .image2 {
 	opacity: 0.75;
 	margin-bottom: -5px;
+	width: 100%;
+	height: 100%;
 }
 
 .image2:hover {
 	filter: invert(100);
+	cursor: pointer;
+}
+
+.ieeeimage {
+	opacity: 0.75;
+	margin-bottom: -5px;
+	width: 100%;
+	height: 100%;
+}
+
+.ieeeimage:hover{
+	filter: hue-rotate(180deg) invert(100);
 	cursor: pointer;
 }
 
@@ -251,7 +272,7 @@ th {
 
 table {
 	padding-bottom: 100px;
-	padding-top: 100px;
+	padding-top: 25px;
 	height: 0%;
 }
 td {
