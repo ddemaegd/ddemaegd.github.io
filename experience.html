@@ -19,6 +19,8 @@
      $('#ETable').removeAttr('hidden');
      $('#IdenTable').slideUp('slow');
      $('#ITable').removeAttr('hidden');
+     $('#FrogTable').slideUp('slow');
+     $('#FTable').removeAttr('hidden');
    });
     $(document).ready(function () {
       var timer;
@@ -103,6 +105,27 @@
         }
       });
     });
+
+    $(document).ready(function () {
+      var timer;
+      $('#FrogTable').slideDown('slow', function () {
+        timer = setTimeout(function () {
+          $('#FrogTable').slideUp("slow");
+        }, 5000000);
+      });
+      $('#Frog').click(function () {
+        if ($('#FrogTable').is(":hidden")) {
+          $('#FrogTable').slideDown('slow', function () {
+            timer = setTimeout(function () {
+              $('#FrogTable').slideUp("slow");
+            }, 5000000);
+          });
+        } else {
+          $('#FrogTable').slideUp('slow');
+          clearTimeout(timer);
+        }
+      });
+    });
   </script>
 
   <script>
@@ -138,7 +161,7 @@
       <div class = NavBar>
         <div  align="center">
 
-          <img id='Race'src="CGT445Title.PNG" class = "image2" alt="Ok, I'll admit, I'm still new at HTML">
+          <img id='Race'src="CGT445Title.PNG" class = "image2" alt="Something went wrong">
           <div  id='RaceTable'>
             <table class="pRace" id='RTable'  hidden  style="width:auto;" background="Stripes.png">
               <tr>
@@ -155,7 +178,7 @@
             </table>
           </div>
 
-          <img id='Cyber' src="CyberPistol Title Image.png" class = "image" alt="Ok, I'll admit, I'm still new at HTML">
+          <img id='Cyber' src="CyberPistol Title Image.png" class = "image" alt="Something went wrong">
           <div  id='CyberTable'>
             <table class="pProj" id='CTable' hidden style="width:100%; background-color: #101012">
               <tr>
@@ -172,27 +195,8 @@
             </table>
           </div>
 
-          <img id='Iden' src="Identity Title.png" class = "image2" alt="Ok, I'll admit, I'm still new at HTML" >
-          <div id="IdenTable" >
-            <div id="image" style="display:inline;" >
-              <table class="pProj" id='ITable' hidden style="width:100%; background-color: #101012">
-                <tr>
-                  <th><p class="pHome" style="font-weight: normal" >Active Development (Nov. 2013- Mar. 2014) <br> <br>Samsung unveiled a new contest initiative called Solve for Tomorrow to foster more enthusiasm in STEM education. Together with industry and NGO partners, the Solve for Tomorrow contest uses technology as a motivator to raise awareness and interest in STEM learning among teachers and students.
 
-                    <br>In this competition, I was apart of a 3-person team that decided to create a video game based on the theme of identity theft. Using sprite art, C#, and the XNA Framework, we were able to complete our game and become state finalists for the competition. I took the role as the lead programmer and completed all of the code for this project.
-                  </p></th>
-                </tr>
-                <tr>
-                  <th>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pD29LbuMgQQ" frameborder="0" allowfullscreen></iframe>
-                  </th>
-                </tr>
-              </table>
-            </div>
-          </div>
-
-
-          <img id='Racing' src="IEEERacingBanner.png" class = "ieeeimage" alt="Ok, I'll admit, I'm still new at HTML">
+          <img id='Racing' src="IEEERacingBanner.png" class = "ieeeimage" alt="Something went wrong">
           <div  id='RacingTable'>
             <table class="pProj" id='ETable' hidden style="width:100%; background-color: #101012">
               <tr>
@@ -241,6 +245,57 @@
               </tr>
             </table>
           </div>
+
+           <img id='Frog' src="FrogBanner.png" class = "ieeeimage" alt="Something went wrong" >
+          <div id="FrogTable" >
+            <div id="image" style="display:inline;" >
+              <table class="pProj" id='FTable' hidden style="width:100%; background-color: #101012">
+                <tr>
+                  <th><p class="pHome" style="font-weight: normal" >Active Development (Sept. 2017) <br> <br>
+                    I decided to test my abilities in recreating the famous level from Frogger. Using a few models and textures from the internet, I was able to create this in roughly 5 hours.</p>
+                  </th>
+                </tr>
+                <tr>
+                  <th align="center" style="padding-left: 8%">
+                    <iframe src="https://player.vimeo.com/video/237847451" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                  </th>
+                </tr>
+                <tr>
+                <th><p style="text-decoration: none;">
+                    <br> Assets:
+                    <br> <a class="NavBarText" style="text-decoration: none;" href="https://www.turbosquid.com/3d-models/3d-model-sea-turtle-stemcell-1182566">Turtle</a>
+                    <br> <a class="NavBarText" style="text-decoration: none;"href="https://www.turbosquid.com/3d-models/3d-semi-truck/418388">Semi</a>
+                    <br> <a class="NavBarText" style="text-decoration: none;"href="https://www.turbosquid.com/FullPreview/Index.cfm/ID/394290">Pickup Truck</a>
+                    <br> <a class="NavBarText" style="text-decoration: none;"href="https://www.turbosquid.com/FullPreview/Index.cfm/ID/818755">Orange Car</a>
+                    <br> <a class="NavBarText" style="text-decoration: none;"href="https://www.turbosquid.com/FullPreview/Index.cfm/ID/594377">Bushes</a></p> 
+                  </th>
+                </tr>
+
+
+              </table>
+            </div>
+          </div>
+
+          <img id='Iden' src="Identity Title.png" class = "image2" alt="Something went wrong" >
+          <div id="IdenTable" >
+            <div id="image" style="display:inline;" >
+              <table class="pProj" id='ITable' hidden style="width:100%; background-color: #101012">
+                <tr>
+                  <th><p class="pHome" style="font-weight: normal; " >Active Development (Nov. 2013- Mar. 2014) <br> <br>Samsung unveiled a new contest initiative called Solve for Tomorrow to foster more enthusiasm in STEM education. Together with industry and NGO partners, the Solve for Tomorrow contest uses technology as a motivator to raise awareness and interest in STEM learning among teachers and students.
+
+                    <br>In this competition, I was apart of a 3-person team that decided to create a video game based on the theme of identity theft. Using sprite art, C#, and the XNA Framework, we were able to complete our game and become state finalists for the competition. I took the role as the lead programmer and completed all of the code for this project.
+                  </p></th>
+                </tr>
+                <tr>
+                  <th style="padding-left: 8%">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pD29LbuMgQQ" frameborder="0" allowfullscreen></iframe>
+                  </th>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+
         </div>
         <div class = "bottomBar">
           <b>Copyright © 2017 <a href="http://ddemaegd.github.io." style="color: DarkOrange; text-decoration:none; " >Dakota DeMaegd</a>. All Rights Reserved.</b>
