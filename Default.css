@@ -147,10 +147,11 @@ ul
 }
 
 .NavBarText {
-	font-size: 25px;
-	margin-left: 17%;
-	margin-right: 9%;
-	text-align: center;
+	font-size: 22px;
+	margin-left: -50%;
+	margin-right: -50%;
+	text-align: left;
+	font-family: 'Share', cursive;
 }
 
 .NavBarText:hover {
@@ -168,15 +169,17 @@ ul
 }
 
 .Active {
-	font-size: 25px;
-	padding-left: 16%;
-	padding-right: 10%;
+	font-size: 22px;
+	padding-left: -40%;
+	padding-right: 0%;
 	text-align: center;
 	color: DarkOrange;
+	font-family: 'Share', cursive;
 }
 
 .Active:hover {
 	color: DodgerBlue;
+
 }
 
 .bottomBar
@@ -288,7 +291,7 @@ td {
 	vertical-align: top;
 	text-align: center;
 	font-weight: bold;
-	width: 33%;
+	width: 25%;
 }
 
 
@@ -336,13 +339,14 @@ td {
 /* Caption text */
 .text {
 	color: #f2f2f2;
-	font-size: 15px;
+	font-size: 18px;
 	padding: 8px 12px;
 	position: absolute;
 	bottom: 8px;
 	width: 100%;
 	text-align: center;
-	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+	text-shadow: 0 0 10px #000000;
+
 }
 
 /* Number text (1/3 etc) */
