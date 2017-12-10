@@ -151,7 +151,7 @@ ul
 	margin-left: -50%;
 	margin-right: -50%;
 	text-align: left;
-	font-family: 'Share', cursive;
+	font-family: 'Exo', sans-serif;
 }
 
 .NavBarText:hover {
@@ -174,7 +174,7 @@ ul
 	padding-right: 0%;
 	text-align: center;
 	color: DarkOrange;
-	font-family: 'Share', cursive;
+	font-family: 'Exo', sans-serif;
 }
 
 .Active:hover {
