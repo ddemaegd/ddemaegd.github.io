@@ -3,13 +3,18 @@
 
 <head>
   <title>Dakota DeMaegd | Software Developer</title>
-  <!--<link  rel="stylesheet" type="text/css" href="ddemaegd.github.io/Default.css">-->
-  <link rel="stylesheet" type="text/css" href="Default.css">
-  <link href="https://fonts.googleapis.com/css?family=Orbitron" type="text/css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web:600i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Dosis|Lato:300i, 400" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Spectral+SC:300i" rel="stylesheet">
   <!--<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>-->
+
+
+  <link rel="stylesheet" type="text/css" href="css/foundation.css">
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
   <script>
     (function (i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
@@ -21,104 +26,142 @@
     ga('create', 'UA-104328653-1', 'auto');
     ga('send', 'pageview');
 
+
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $("[data-menu-underline-from-center] a").addClass("underline-from-center");
+
+    });
+
   </script>
 </head>
 
 <body>
-  <div class="right-to-left">
-    <div class="left-to-right">
-      <div class="Gray">
-        <div class="Tab">
-          <h1>Dakota DeMaegd</h1>
-          <h2>Game / Software Developer</h2>
-        </div>
-      </div>
-      <table class="NavBar" align="center" width="100%">
-        <tr>
-          <td>
-            <a href="./index.html" class="Active" style="text-decoration:none">Home</a>
-          </td>
-          <td>
-            <a href="./experience.html" class="NavBarText" style="text-decoration:none">Projects</a>
-          </td>
-          <td>
-            <a href="./resume.html" class="NavBarText" style="text-decoration:none">Resume</a>
-          </td>
-          <td>
-            <a href="./environments.html" class="NavBarText" style="text-decoration:none">Environment Design</a>
-          </td>
-        </tr>
-      </table>
-      <div class="Gray">
+
+  <div class="box-shadow Header text-center" id="Header">
+
+    <h1>Dakota DeMaegd</h1>
+    <h2>Game / Software Developer</h2>
+
+    <nav class="hover-underline-menu" data-menu-underline-from-center>
+      <ul class="menu align-center">
+        <li class="large-3 small-6 columns text-center NavBar"><a class="NavBarActive" href="./index.html">Home</a></li>
+        <li class="large-3 small-6 columns text-center NavBar"><a class="NavBarText" href="./experience.html">Projects</a></li>
+        <li class="large-3 small-6 columns text-center NavBar"><a class="NavBarText" href="./resume.html">Resume</a></li>
+        <li class="large-3 small-6 columns text-center NavBar"><a class="NavBarText" href="./environments.html">Environment
+            Design</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <div class="row" style="margin-top: 200px;">
+    <div class="large-8 small-12 large-centered small-centered columns box-shadow" style="padding-top:10px;">
+      <div class="Paragraph" style="margin:60px;">
         <h3>Welcome!</h3>
-        <p class="pHome">I'm an aspiring game programmer with experience in software development. I am current studying my bachelor's at Purdue
-          University. I am expected to graduate in Dec. 2017 majoring in Computer Information Technology with minors in Organizational
-          Leadership Supervision and Communications. I have completed a few game passion projects on the side that correlate
-          to my coursework. I specialize with programming in C# using the XNA/MonoGame Framework as well as working in Unreal
+        <br />
+        <p class="pHome">I'm an experienced Software / Web Developer with a demonstrated history of working
+          in the warehousing, healthcare, and energy industry with strong engineering, professional skills in C#,
+          ASP.Net, SQL, VB.Net, HTML / CSS, and Python. I'm also an aspiring game developer.
+          I graduated with a bachelor's at Purdue University in Dec. 2017 majoring in Computer
+          Information Technology with minors in Organizational
+          Leadership Supervision and Communications. I have completed a few game passion projects
+          on the side to show my interested and what I am capable of. I specialize with programming
+          in C# using the XNA/MonoGame Framework as well as working
+          in Unreal
           Engine 4.</p>
         <p>Feel free to take a look around. Contact me if you are interested in working together! </p>
-
-        <div class="slideshow-container">
-          <div class="mySlides fade">
-            <img src="HomeImages/GenericFPSScreenShot.png" style="width:100%">
-            <div class="text">Unreal Engine 4 FPS Environment</div>
-            <div class="text"></div>
-          </div>
-
-          <div class="mySlides fade">
-            <img src="HomeImages/CyberPistol2.png" style="width:100%">
-            <div class="text">CyberPistol</div>
-            <div class="text"></div>
-          </div>
-
-          <div class="mySlides fade">
-            <img src="HomeImages/SuperMegaScreenShot.png" style="width:100%">
-            <div class="text">Super Mega Arcade HD Grand Prix Drift Heat Racing</div>
-            <div class="text"></div>
-          </div>
-
-          <div class="mySlides fade">
-            <img src="HomeImages/CyberPistol3.png" style="width:100%">
-            <div class="text">CyberPistol</div>
-            <div class="text"></div>
-          </div>
-
-          <div class="mySlides fade">
-            <img src="HomeImages/KartImage3.jpg" style="width:100%">
-            <div class="text">Purdue IEEE Racing</div>
-            <div class="text"></div>
-          </div>
-
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
-
-        <div style="text-align:center; padding-bottom: 35px;">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
-          <span class="dot" onclick="currentSlide(5)"></span>
-        </div>
-
-        <div class="NavBar" style="padding-top: -25px; margin-bottom: 16px">
-          <h5>
-            <a href="mailto:ddemaegd82@gmail.com" class="Resume" style="text-decoration:none;">Email: ddemaegd82@gmail.com</a>
-          </h5>
-        </div>
-        <div class="NavBar " style="padding-top: -25px; ">
-          <h5>
-            <a href="https://www.linkedin.com/in/dakota-demaegd-b60744105/ " target="_blank " class="Resume" style="text-decoration:none; ">LinkedIn: Dakota DeMaegd</a>
-          </h5>
-        </div>
       </div>
-      <div class="bottomBar">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="HomeImages/GenericFPSScreenShot.png" style="width:100%">
+          <div class="text">Unreal Engine 4 FPS Environment</div>
+          <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <a href="https://imgur.com/lBx3vPf">
+              <img style="width:100%" src="https://i.imgur.com/lBx3vPf.gif" title="source: imgur.com" />
+            </a>
+           
+             <div class="text">CyberPistol</div>
+          <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="HomeImages/SuperMegaScreenShot.png" style="width:100%">
+          <div class="text">Super Mega Arcade HD Grand Prix Drift Heat Racing</div>
+          <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <a href="https://imgur.com/3pkFQuZ">
+              <img style="width:100%" src="https://i.imgur.com/3pkFQuZ.gif" title="source: imgur.com" />
+            </a>
+          <div class="text">CyberPistol</div>
+          <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="HomeImages/KartImage3.jpg" style="width:100%">
+          <div class="text">Purdue IEEE Racing</div>
+          <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <a href="https://imgur.com/fJdRFHu">
+              <img style="width:100%" src="https://i.imgur.com/fJdRFHu.gif" title="source: imgur.com" />
+            </a>
+          <div class="text">CyberPistol</div>
+          <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <a href="https://imgur.com/sjPEWXu">
+              <img style="width:100%" src="https://i.imgur.com/sjPEWXu.gif" title="source: imgur.com" />
+            </a>
+          <div class="text">CyberPistol</div>
+          <div class="text"></div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <div style="text-align:center; padding-bottom: 35px;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+      </div>
+
+      <div class="NavBar text-center" style="padding-top: -25px; margin-bottom: 16px">
+        <h5>
+          <a href="mailto:ddemaegd82@gmail.com" class="Resume" style="text-decoration:none;">Email:
+            ddemaegd82@gmail.com</a>
+        </h5>
+      </div>
+      <div class="NavBar " style="padding-top: -25px; ">
+        <h5>
+          <a href="https://www.linkedin.com/in/dakota-demaegd-b60744105/ " target="_blank " class="Resume" style="text-decoration:none; ">LinkedIn:
+            Dakota DeMaegd</a>
+        </h5>
+      </div>
+
+      <div class="bottomBar text-center">
         <b>Copyright © 2018
-          <a href="http://ddemaegd.github.io." style="color: DarkOrange; text-decoration:none;">Dakota DeMaegd</a>. All Rights Reserved.</b>
+          <a href="http://ddemaegd.github.io." style="color: DarkOrange; text-decoration:none;">Dakota DeMaegd</a>. All
+          Rights Reserved.</b>
       </div>
     </div>
   </div>
+
 </body>
 
 <script type="text/javascript">
@@ -152,6 +195,8 @@
       }
     }
   }
+
+
 </script>
 
 </html>
